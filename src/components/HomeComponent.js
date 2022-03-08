@@ -4,7 +4,7 @@ function Home(props){
 
     return(
         <React.Fragment>
-            <div>
+            <div className="content-container">
                 <h1>Hello World!</h1>
             </div>
         </React.Fragment>

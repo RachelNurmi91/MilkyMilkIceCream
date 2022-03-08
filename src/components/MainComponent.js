@@ -1,12 +1,19 @@
 import React, { Component } from 'react';
 import Header from './HeaderComponent';
 import Home from './HomeComponent';
+import About from './AboutComponent';
+import Flavors from './FlavorComponent';
+import Footer from './FooterComponent';
+import { FLAVORS } from '../shared/flavors.js';
 import { Switch, Route, Redirect } from 'react-router-dom';
 
 class Main extends Component {
     constructor(props) {
         super(props);
-    };
+        this.state = {
+            flavors: FLAVORS
+        };
+    }
 
     render() {
 
@@ -24,8 +31,11 @@ class Main extends Component {
                 <Header />
                 <Switch>
                     <Route path='/home' component={HomePage} />
+                    <Route path='/flavors' render={() => <Flavors flavors={this.state.flavors} />} />
+                    <Route path='/about' component={About} />
                     <Redirect to='/home'/>
                 </Switch>
+                <Footer />
             </div>
         );
     }

@@ -1,5 +1,5 @@
 import React, { Component } from 'react';
-import { Button, Jumbotron, Nav, Navbar, NavbarBrand, NavItem, } from 'reactstrap';
+import { Button, Jumbotron, Nav, Navbar, NavbarBrand, NavItem } from 'reactstrap';
 import { NavLink } from 'react-router-dom';
 
 class Header extends Component {
@@ -13,7 +13,7 @@ class Header extends Component {
             <React.Fragment>
                 <Navbar className="navbar-design">
                     <div className="container">
-                        <NavbarBrand href="/"><img src="/images/logo-heart.png" alt="Yellow Heart"></img></NavbarBrand>
+                        <NavbarBrand href="/"><img className="heartIcon" src="/images/logo-heart.png" alt="Yellow Heart"></img></NavbarBrand>
                         <Nav>
                             <NavItem>
                                 <NavLink className="nav-link mx-2" to="/home">
@@ -22,7 +22,7 @@ class Header extends Component {
                             </NavItem>
                             <NavItem>
                                 <NavLink className="nav-link mx-2" to="/flavors">
-                                    Flavor
+                                    Flavors
                                 </NavLink>
                             </NavItem>
                             <NavItem>
@@ -36,6 +36,11 @@ class Header extends Component {
                                 </NavLink>
                             </NavItem>
                             <NavItem>
+                                <NavLink className="nav-link mx-2" to="/events">
+                                    Events
+                                </NavLink>
+                            </NavItem>
+                            <NavItem>
                                 <NavLink className="nav-link mx-2" to="/merch">
                                     Merch 
                                 </NavLink>
@@ -44,7 +49,7 @@ class Header extends Component {
                     </div>
                 </Navbar>
 
-                <Jumbotron fluid>
+                <Jumbotron fluid className="mb-0">
                     <div className="container">
                         <div className="row">
                             <div className="col-12">

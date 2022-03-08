@@ -8,8 +8,23 @@
   border: none;
 }
 
-.navbar-design {
+.navbar-design,
+.footer-design {
   background-color:#2eabdd;
+}
+
+.footer-design {
+  padding-top: 3%;
+  padding-bottom: 2%;
+  color: #fff;
+  text-align: center;
+}
+
+.fa-instagram ,
+.fa-facebook,
+.fa-twitter,
+.fa-youtube {
+  color: #fff;
 }
 
 .jumbotron {
@@ -19,4 +34,46 @@
   background-position: center;
   background-repeat: no-repeat;
   background-size: cover;
+}
+
+/* Containers */
+
+.content-container {
+  padding: 5% 15%
+}
+
+/* Images */
+
+.heartIcon {
+  height: 50px;
+}
+
+.about-img,
+.about-lg-img {
+  border-radius: 50%;
+}
+
+.about-lg-img {
+  width: 400px;
+}
+
+.about-img {
+  width: 250px;
+}
+
+/* Fonts */
+
+.flavor-titles,
+.about-titles {
+  color: #2eabdd;
+  text-align: center;
+  text-transform: uppercase;
+}
+
+.about-titles {
+  font-size: 35px;
+}
+
+.flavor-titles {
+  font-size: 25px;
 }
