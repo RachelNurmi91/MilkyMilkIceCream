@@ -23,6 +23,7 @@ function Flavors(props) {
                 </BreadcrumbItem>
             </Breadcrumb>
             <div className="container">
+                <h1 className="text-center pb-3">Flavors</h1>
                 <div className="row">
                     {flavorDirectory}
                 </div>
@@ -34,14 +35,12 @@ function Flavors(props) {
 function RenderFlavors({flavor}){
     return (
         <React.Fragment>
-            <div className="content-container">
                 <Card>
                     <CardImg width="100%" src={flavor.image} alt={flavor.name} />
-                    <CardTitle><h2 className="flavor-titles">{flavor.name}</h2></CardTitle>
-                    <CardBody><p>{flavor.description}</p>
+                    <CardTitle><h2 className="flavor-titles mt-3">{flavor.name}</h2></CardTitle>
+                    <CardBody className="card-body-custom"><p>{flavor.description}</p>
                     </CardBody>
                 </Card>
-            </div>
 
         </React.Fragment>
     );

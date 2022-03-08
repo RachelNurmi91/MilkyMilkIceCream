@@ -36,6 +36,11 @@
   background-size: cover;
 }
 
+.card-body-custom {
+  padding-top: 0px !important;
+}
+
+
 /* Containers */
 
 .content-container {
@@ -51,6 +56,12 @@
 .about-img,
 .about-lg-img {
   border-radius: 50%;
+}
+
+.contact-img {
+  max-width: 100%;
+  margin: 0px;
+  padding: 0px;
 }
 
 .about-lg-img {
